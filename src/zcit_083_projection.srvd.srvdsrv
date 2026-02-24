@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service defination for student'
+define service ZCIT_083_PROJECTION {
+  expose ZCIT_083_PROJECTION;
+}

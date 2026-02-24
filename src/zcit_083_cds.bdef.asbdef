@@ -1,0 +1,30 @@
+managed implementation in class zbp_cit_083_cds unique;
+strict ( 2 );
+
+define behavior for ZCIT_083_CDS alias Student
+persistent table zemp_083
+lock master
+authorization master ( instance )
+etag master Locallastchangedat
+{
+  create (authorization  : global);
+  update;
+  delete;
+
+  field ( numbering : managed, readonly ) Id;
+
+  mapping for zemp_083
+  {
+    Id                 = id;
+    Firstname          = firstname;
+    Lastname           = lastname;
+    Age                = age;
+    Course             = course;
+    Courseduration     = courseduration;
+    Status             = status;
+    Gender             = gender;
+    Dob                = dob;
+    Lastchangedat      = lastchangedat;
+    Locallastchangedat = locallastchangedat;
+  }
+}

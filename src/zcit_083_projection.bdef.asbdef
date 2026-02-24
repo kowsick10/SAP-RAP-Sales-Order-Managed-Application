@@ -1,0 +1,10 @@
+projection;
+strict ( 2 );
+
+define behavior for ZCIT_083_PROJECTION
+{
+  use create;
+  use update;
+  use delete;
+
+  }
